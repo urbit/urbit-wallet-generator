@@ -4,7 +4,8 @@ import lodash from 'lodash'
 import * as sigil from 'sigil-js'
 import ob from 'urbit-ob'
 import classnames from 'classnames'
-import kg from 'urbit-key-generation'
+// temporarily use keygen-js with argon2u that is configured with 520MB
+import kg from '../vendor/kg'
 
 
 import Button from '../components/Button'
