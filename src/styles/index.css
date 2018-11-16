@@ -455,3 +455,64 @@ code, pre {
 .noClick {
   pointer-events: none;
 }
+
+.legal ol {
+  counter-reset: item;
+}
+
+.legal ol li {
+  display: block;
+}
+
+.legal ol ol li {
+  padding-left: 8rem;
+}
+
+.legal ol li:before {
+  content: counters(item, ".") ".";
+  counter-increment: item;
+  display: inline-block;
+  transform: translate(-10rem,5.825rem);
+}
+
+.legal .ls-alpha {
+  counter-reset: item;
+}
+
+.legal .ls-alpha li:before {
+  content: counter(item, lower-alpha) ".";
+  counter-increment: item;
+  display: inline-block;
+  transform: translate(-10rem,5.825rem);
+}
+
+
+
+.old-list ol {
+  list-style: none;
+  padding-left: 0; }
+
+.old-list ol > li {
+  counter-increment: item;
+  margin-left: 0;
+  }
+
+.old-list  ol > li:before {
+  content: counter(item);
+  font-weight: 700;
+  vertical-align: center;
+  display: inline-block;
+  width: 6rem;
+  text-align: left; }
+
+/*
+  .old-list ul ol,
+  .old-list ul ul,
+  .old-list ol ul,
+  .old-list ul ol {
+    margin: 2rem; }
+.old-list ul ol li,
+.old-list ul ul li,
+.old-list ol ul li,
+.old-list ul ol li {
+       } */

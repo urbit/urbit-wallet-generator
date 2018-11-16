@@ -457,7 +457,7 @@ class Generate extends React.Component {
             disable={disableGenerateButton} />
           <div className={`${entropyBarClassnames} f-1 b-r-1-black`} />
           <div className={`${walletsBarClassnames} f-3 b-r-1-black`} />
-          <div className={`${paperBarClassnames} f-3 b-r-1-black`} />
+          <div className={`${paperBarClassnames} f-1 b-r-1-black`} />
           <Button
             className={ `${nextButtonClass} m-0` }
             text={'View wallets →'}

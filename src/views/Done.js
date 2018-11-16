@@ -13,7 +13,7 @@ class Done extends React.Component {
       : 'btn shape-gray-10'
 
     return(
-      <div className={'col-md-7'}>
+      <div className={'col-md-7 old-list'}>
 
         <h2>{`Next Steps`}</h2>
 
