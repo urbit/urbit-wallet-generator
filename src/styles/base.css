@@ -1518,7 +1518,7 @@ ul {
   ul li {
     margin-bottom: 2rem;
     padding-left: 2rem; }
-
+/*
 ul ol,
 ul ul,
 ol ul,
@@ -1528,14 +1528,14 @@ ul ol {
   ul ul li,
   ol ul li,
   ul ol li {
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem; } */
 
 ul.list-reset {
   list-style: none;
   padding-left: 0; }
   ul.list-reset li {
     padding-left: 0; }
-
+/*
 ol {
   list-style: none;
   padding-left: 0; }
@@ -1551,7 +1551,7 @@ ol > li:before {
   vertical-align: center;
   display: inline-block;
   width: 6rem;
-  text-align: left; }
+  text-align: left; } */
 
 /*
   Fluid-to-fixed conversions at standard screen sizes:

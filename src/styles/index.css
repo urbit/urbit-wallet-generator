@@ -455,3 +455,33 @@ code, pre {
 .noClick {
   pointer-events: none;
 }
+
+.legal ol {
+  counter-reset: item;
+}
+
+.legal ol li {
+  display: block;
+}
+
+.legal ol ol li {
+  padding-left: 8rem;
+}
+
+.legal ol li:before {
+  content: counters(item, ".") ".";
+  counter-increment: item;
+  display: inline-block;
+  transform: translate(-10rem,5.825rem);
+}
+
+.legal .ls-alpha {
+  counter-reset: item;
+}
+
+.legal .ls-alpha li:before {
+  content: counter(item, lower-alpha) ".";
+  counter-increment: item;
+  display: inline-block;
+  transform: translate(-10rem,5.825rem);
+}
