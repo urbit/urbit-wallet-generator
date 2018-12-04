@@ -1,6 +1,6 @@
 {
   "name": "wallet-generator",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "private": true,
   "dependencies": {
     "PaperCollateralRenderer": "github:urbit/PaperCollateralRenderer",
@@ -25,7 +25,7 @@
     "babel-plugin-lodash": "^3.3.4",
     "gulp": "4.0",
     "gulp-babel": "^7.0.0",
-    "gulp-copy": "^1.1.0",
+    "gulp-copy": "^4.0.1",
     "gulp-cssfont64": "0.0.1",
     "gulp-cssimport": "^6.0.1",
     "gulp-cssnano": "^2.1.3",
