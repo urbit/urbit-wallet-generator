@@ -1,3 +1,9 @@
+> **This repository has been deprecated**.
+>
+> You can find user-friendly wallet generation functionality in
+> [Bridge](https://bridge.urbit.org), or low-level utilities in
+> [urbit-key-generation](https://www.npmjs.com/package/urbit-key-generation).
+
 # wallet-generator
 
 A client-side app for generating Urbit HD wallets.
@@ -6,16 +12,16 @@ A client-side app for generating Urbit HD wallets.
 You can download the `wallet-generator.html` file from the [releases page](www.github.com/urbit/urbit-wallet-generator/releases). You can run the Wallet Generator by just opening the downloaded `wallet-generator.html` file.
 
 ### Generate urbit-ships.txt
-You can generate your own `urbit-ships.txt` file by following the below instructions: 
+You can generate your own `urbit-ships.txt` file by following the below instructions:
 1. Get the @ud of the ship(s) you're trying to generate wallets for. You can get this by running `` `@ud`~ship-name`` in your dojo.
 2. Modify this template JSON with the appropriate ship @ud's.:
 
 ```
 {
   # this field was used only for record-keeping while Registration was live
-  "idCode":"", 
+  "idCode":"",
   # replace this array with an array of planet @ud's (the numeric encoding of the ship being deeded)
-  "planets":[2938474], 
+  "planets":[2938474],
   "stars":[1024],
   "galaxies":[0]
 }
@@ -24,7 +30,7 @@ You can generate your own `urbit-ships.txt` file by following the below instruct
 4. Save the base64-encoded JSON as `urbit-ships.txt`
 
 ### Parse urbit-registration.txt
-Trying to deed ships by manually reading the `urbit-registration.txt` file is error-prone, so please make sure you know what you are doing! 
+Trying to deed ships by manually reading the `urbit-registration.txt` file is error-prone, so please make sure you know what you are doing!
 
 You can parse the `urbit-registration.txt` file by following the below instructions:
 1. Decode the contents of the `urbit-registration.txt` file in base64. You can use an online tool like [Base64Decode](https://www.base64decode.org/).
@@ -33,12 +39,12 @@ You can parse the `urbit-registration.txt` file by following the below instructi
 ```
 {
   "ship1": [
-    "ownership_address", 
-    "transfer_proxy", 
-    "spawn_proxy", 
-    "management_proxy", 
-    "voting_proxy", 
-    "auth_key", 
+    "ownership_address",
+    "transfer_proxy",
+    "spawn_proxy",
+    "management_proxy",
+    "voting_proxy",
+    "auth_key",
     "encryption_key"
   ],
   "ship2": [
